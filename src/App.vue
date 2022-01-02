@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h2>PIZZERÍA DON REMOLO</h2>
+    <input v-model="message" placeholder="Buscar comida" class="inputSearch">
     <div id="nav">
       <router-link to="/pizzas" class="linkTo">Pizzas</router-link>
       <router-link to="/empanadas" class="linkTo">Empanadas</router-link>
@@ -17,6 +19,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #f1f0de;
+  padding: 1rem;
 }
 
 #nav {
@@ -34,5 +38,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.inputSearch {
+  width: 500px;
+  padding: 0.5rem;
 }
 </style>

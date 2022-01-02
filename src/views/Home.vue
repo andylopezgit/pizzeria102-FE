@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <Pizzas msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Pizzas from '../components/Pizzas.vue'
 
 export default {
-  name: 'Home',
-  components: {
-    Pizzas
-  }
-}
+  name: "Home",
+};
 </script>
+
+<style scoped>
+.home {
+  background-image: url("../assets/logo.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-color: #f1f0de;
+  background-position: center;
+}
+</style>
